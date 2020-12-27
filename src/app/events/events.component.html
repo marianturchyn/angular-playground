@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row flex-center">
+    <div class="col-sm-6">
+      <app-event-form [formModel]="currentlyEditedEvent"
+                      [modalActionType]="modalActionType"></app-event-form>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-sm-12">
+      <div class="d-flex justify-content-between mb-2">
+        <h4>Events list</h4>
+
+        <div>
+          <button id="create-event-btn"
+                  class="btn btn-success"
+                  (click)="createEvent()">+ Create</button>
+        </div>
+      </div>
+
+      <app-events-list [items]="events"
+                      (removeEvent)="removeEvent($event)"
+                      (editEvent)="editEvent($event)"></app-events-list>
+    </div>
+  </div>
+</div>

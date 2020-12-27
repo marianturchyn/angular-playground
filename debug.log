@@ -1,0 +1,19 @@
+[1218/143753.952:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1218/170154.761:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1219/171922.886:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1219/175342.844:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1222/191906.620:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1222/194512.038:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1222/201346.204:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1223/201636.008:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1225/210741.239:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1225/210741.238:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1225/210741.249:ERROR:exception_snapshot_win.cc(99)] thread ID 572 not found in process
+[1225/210741.248:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1225/210741.249:ERROR:exception_snapshot_win.cc(99)] thread ID 16940 not found in process
+[1225/210741.248:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1225/210741.249:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1225/210741.249:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1225/210741.249:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1225/210741.249:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1225/210741.249:ERROR:exception_snapshot_win.cc(99)] thread ID 10428 not found in process

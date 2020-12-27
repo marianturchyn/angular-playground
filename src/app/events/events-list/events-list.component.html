@@ -1,0 +1,29 @@
+<table class="table table-bordered table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Date</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let item of items">
+      <th scope="row">{{item.id}}</th>
+      <td class="event-title">{{item.title}}</td>
+      <td>{{item.description}}</td>
+      <td>{{item.date | date}}</td>
+      <td>
+        <button class="btn btn-link p-0 mr-2"
+                (click)="editEvent.emit(item)">Edit</button>
+        <button class="btn btn-link p-0"
+                (click)="removeEvent.emit(item?.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="items?.length === 0 || !items"
+    class="no-data mb-3">No data</div>
