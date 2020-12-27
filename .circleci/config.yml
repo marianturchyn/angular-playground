@@ -26,15 +26,15 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: yarn install
+      - run: npm install
 
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: yarn ng build --prod --no-progress
-      - run: yarn ng test --sr --no-progress
+      - run: npm run ng build --prod --no-progress
+      - run: npm run ng test --sr --no-progress
       - deploy:
           command: |
             sh scripts/publish.sh
