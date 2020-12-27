@@ -34,7 +34,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: npm run ng build --prod --no-progress
-      - run: npm run ng test --sr --no-progress
+      - run: npm run ng test -- --watch=false --no-progress
       - run: npm run ng e2e --sr --no-progress
       - deploy:
           command: |
