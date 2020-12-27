@@ -2,19 +2,12 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-dependencies:
-  override:
-    #new chromedriver
-    - wget https://chromedriver.storage.googleapis.com/2.29/chromedriver_linux64.zip
-    - unzip chromedriver_linux64.zip
-    - sudo cp chromedriver /usr/local/bin/chromedriver
-
 version: 2
 jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:14.15.0-browsers
+      - image: circleci/node:15.5.0-browsers
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
