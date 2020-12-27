@@ -2,7 +2,7 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-- run: #STABLE
+run: #STABLE
   name: Install Chromedriver latest version
   command: |
     sudo apt-get update
