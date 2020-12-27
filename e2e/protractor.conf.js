@@ -18,6 +18,9 @@ exports.config = {
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
+  chromeOptions: {
+    'args': ['--no-sandbox','--headless','--window-size=1600x1000']
+  },
   jasmineNodeOpts: {
     showColors: true,
     defaultTimeoutInterval: 30000,
