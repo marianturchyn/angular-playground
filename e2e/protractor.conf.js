@@ -13,14 +13,14 @@ exports.config = {
     './src/**/*.e2e-spec.ts'
   ],
   capabilities: {
-    browserName: 'chrome'
+    browserName: 'chrome',
+    chromeOptions: {
+      'args': ['--no-sandbox','--headless','--window-size=1600x1000']
+    },
   },
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
-  chromeOptions: {
-    'args': ['--no-sandbox','--headless','--window-size=1600x1000']
-  },
   jasmineNodeOpts: {
     showColors: true,
     defaultTimeoutInterval: 30000,
