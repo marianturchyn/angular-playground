@@ -13,6 +13,9 @@ jobs:
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
+      dependencies:
+        pre:
+          - curl -s https://raw.githubusercontent.com/chronogolf/circleci-google-chrome/master/use_chrome_stable_version.sh | bash
 
     working_directory: ~/repo
 
@@ -32,8 +35,6 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-
-      - run: sudo apt-get install google-chrome-stable
 
       - run: npm run ng build --prod --no-progress
       - run: npm run ng test -- --watch=false --no-progress
