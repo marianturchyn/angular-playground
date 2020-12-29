@@ -5,9 +5,12 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --prod --no-progress",
     "test": "ng test",
+    "test:prod": "test -- --watch=false --no-progress",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "e2e:prod": "ng e2e --sr --no-progress"
   },
   "private": true,
   "dependencies": {
